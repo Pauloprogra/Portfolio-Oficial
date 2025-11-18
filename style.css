@@ -1,0 +1,465 @@
+/* style.css */
+
+/* VARIÁVEIS DE CORES E FONTES */
+:root {
+    --color-background: #121212;      
+    --color-surface: #1E1E1E;         
+    --color-text-light: #E0E0E0;      
+    --color-text-muted: #A0A0A0;      
+    --color-accent: #00FFFF;          /* Azul Neon Vibrante */
+    --font-family: 'Inter', sans-serif;
+}
+
+/* RESET E BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--color-background);
+    color: var(--color-text-light);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    color: var(--color-text-light);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/* TÍTULOS E SEÇÕES */
+section {
+    padding: 100px 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px;
+    color: var(--color-accent);
+}
+
+/* BOTÕES GLOBAIS */
+.btn-primary, .btn-secondary {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--color-accent);
+    color: var(--color-background);
+    border: 2px solid var(--color-accent);
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    color: var(--color-accent);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--color-accent);
+    border: 2px solid var(--color-accent);
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-accent);
+    color: var(--color-background);
+    transform: translateY(-2px);
+}
+
+/* HEADER / NAVEGAÇÃO */
+.header {
+    background-color: var(--color-background);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #222;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: var(--color-accent);
+}
+
+.nav-menu a {
+    margin-left: 25px;
+    font-weight: 400;
+}
+
+.cta-nav {
+    color: var(--color-accent) !important;
+    border: 1px solid var(--color-accent);
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+.cta-nav:hover {
+    background-color: var(--color-accent);
+    color: var(--color-background) !important;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--color-accent);
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+
+/* SEÇÃO HERÓI */
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative; 
+    overflow: hidden; 
+    background-color: var(--color-background); 
+}
+
+/* CANVAS DE PARTÍCULAS */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1; 
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative; 
+    z-index: 2; 
+    padding: 20px;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: var(--color-text-muted);
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Efeito de digitação - Cursor Neon */
+#typing-text {
+    border-right: 3px solid var(--color-accent); 
+    white-space: nowrap; 
+    overflow: hidden; 
+    display: inline-block;
+    vertical-align: top;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+/* Animação do cursor Neon */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--color-accent); }
+}
+
+/* SEÇÃO SOBRE MIM */
+.about {
+    background-color: var(--color-surface);
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.about-left-column {
+    display: flex; 
+    flex-direction: column; 
+    gap: 20px;
+}
+
+.about-bio p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: var(--color-text-light);
+}
+
+.resume-link {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+}
+
+/* ANIMAÇÃO DE FLUTUAÇÃO */
+@keyframes float {
+    0% { transform: translateY(0px); box-shadow: 0 5px 15px 0px rgba(0, 255, 255, 0.4); }
+    50% { transform: translateY(-10px); box-shadow: 0 25px 15px 0px rgba(0, 255, 255, 0.2); }
+    100% { transform: translateY(0px); box-shadow: 0 5px 15px 0px rgba(0, 255, 255, 0.4); }
+}
+
+/* Estilo da Foto do Desenvolvedor com efeito flutuante */
+.photographer-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; 
+    overflow: hidden;
+    margin: 0 auto 30px auto; 
+    border: 3px solid var(--color-accent); 
+    animation: float 4s ease-in-out infinite; 
+    position: relative; 
+}
+
+.photographer-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Barras de Habilidade */
+.skills h3 {
+    color: var(--color-accent);
+    margin-bottom: 25px;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.skill-bar {
+    background-color: #333;
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.skill-level {
+    height: 100%;
+    background-color: var(--color-accent);
+    transition: width 1s ease-in-out;
+}
+.skill-item span {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+    color: var(--color-text-light);
+}
+
+
+/* SEÇÃO PROJETOS */
+.projects {
+    padding: 100px 0 120px 0;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.project-card {
+    background-color: var(--color-surface);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-accent);
+}
+
+/* Estilo da Imagem de Capa do Projeto */
+.project-image {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 5px;
+    margin-bottom: 15px;
+    display: block; 
+}
+
+.project-links a {
+    margin-right: 15px;
+    font-weight: 700;
+    color: var(--color-text-light);
+}
+
+.project-links a:hover {
+    color: var(--color-accent);
+}
+
+/* SEÇÃO CONTATO - CORREÇÃO DE BUG DE ALINHAMENTO */
+.contact {
+    background-color: var(--color-surface);
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 60px;
+    max-width: 900px;
+    margin: 0 auto;
+    align-items: center; 
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px; 
+    margin: 0 auto; 
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 15px;
+    border: 1px solid #333;
+    background-color: #2a2a2a;
+    color: var(--color-text-light);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.contact-links {
+    text-align: center; 
+}
+
+.contact-links h3 {
+    color: var(--color-accent);
+    margin-bottom: 25px;
+    font-size: 1.4rem;
+}
+
+.social-link {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.social-link i {
+    color: var(--color-accent);
+    width: 25px;
+}
+
+/* RODAPÉ */
+.footer {
+    background-color: #000000;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+}
+
+.footer .heart {
+    color: #ff4d4d;
+}
+
+/* ========================================================= */
+/* RESPONSIVIDADE */
+/* ========================================================= */
+
+@media (max-width: 992px) {
+    /* SOBRE MIM */
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    /* CONTATO */
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .contact-links {
+        padding-top: 40px;
+        border-top: 1px solid #333;
+        text-align: center;
+    }
+    .social-link {
+        display: inline-block;
+        margin: 0 15px 15px 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 60px 0;
+    }
+    
+    /* MENU HAMBÚRGUER */
+    .hamburger {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 65px; 
+        left: 0;
+        background-color: var(--color-background);
+        border-top: 1px solid #222;
+        z-index: 99;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    /* HERÓI */
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    .hero-actions {
+        flex-direction: column;
+    }
+    .btn-primary, .btn-secondary {
+        width: 100%;
+    }
+}

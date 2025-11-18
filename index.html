@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paulo Dos Santos | Desenvolvedor Full Stack</title> 
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container nav-content">
+            <a href="#inicio" class="logo">Paulo.Dev</a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <a href="#sobre">Sobre</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contato" class="cta-nav">Contato</a>
+            </nav>
+            <button class="hamburger" id="hamburger">☰</button>
+        </div>
+    </header>
+
+    <main>
+        
+        <section class="hero" id="inicio">
+            <div id="particles-js"></div> 
+            
+            <div class="container hero-content"> <h1 class="hero-title">Olá, eu sou <span id="typing-text"></span></h1>
+                <p class="hero-subtitle">Desenvolvedor Full Stack Júnior | Foco em soluções de ponta a ponta e performance.</p>
+                <div class="hero-actions">
+                    <a href="#projetos" class="btn-primary">Ver Projetos</a>
+                    <a href="#contato" class="btn-secondary">Fale Comigo</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="sobre">
+            <div class="container">
+                <h2 class="section-title">Sobre Mim</h2>
+                <div class="about-content">
+                    
+                    <div class="about-left-column">
+                        <div class="photographer-photo">
+                            <img src="foto-perfil.png" alt="Foto do Desenvolvedor Paulo Dos Santos">
+                        </div>
+                        <div class="about-bio">
+                            <p>Sou um Desenvolvedor Full Stack Júnior apaixonado por construir soluções robustas, desde o banco de dados até a interface do usuário.</p>
+                            <p>Estou em busca de oportunidades para aplicar minhas habilidades em HTML, CSS, JavaScript, PHP/Node.js e MySQL/PostgreSQL em projetos desafiadores e com impacto real.</p>
+                           
+                        </div>
+                    </div>
+
+                    <div class="skills">
+                        <h3>Habilidades Técnicas</h3>
+                        <div class="skill-item">
+                            <span class="skill-name">HTML5 & Semântica</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CSS3 & Responsividade (Grid/Flex)</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript (ES6+)</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <span class="skill-name">PHP (Linguagem Servidor)</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 70%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Node.js & Express</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 75%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SQL (MySQL/PostgreSQL)</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 65%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Git & GitHub</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 95%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects" id="projetos">
+            <div class="container">
+                <h2 class="section-title">Meus Projetos</h2>
+                <div class="projects-grid">
+                    
+                    <div class="project-card">
+                        <img src="projeto1.png" alt="Capa do Projeto Nexus Digital (Landing Page)" class="project-image">
+                        <h3>Nexus Digital (LP)</h3>
+                        <p>Landing Page de alta conversão em Dark Mode. 100% responsiva com CSS Grid e Flexbox. Foco em performance.</p>
+                        <div class="project-links">
+                            <a href="https://pauloprogra.github.io/Landing-Page-Nexus-Digital/" target="_blank" class="link-live">Ver Site <i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/Pauloprogra/Landing-Page-Nexus-Digital" target="_blank" class="link-github">Código <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="projeto2.png" alt="Capa do Projeto Sistema CRUD em PHP" class="project-image">
+                        <h3>Sistema CRUD em PHP</h3>
+                        <p>Sistema Full-Stack para gestão de clientes. PHP/MySQL, autenticação, busca, paginação e máscaras de formulário.</p>
+                        <div class="project-links">
+                            <a href="https://pauloprogra.github.io/Crud_Sistema-de-Clientes/" target="_blank" class="link-live">Ver Site <i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/Pauloprogra/Crud_Sistema-de-Clientes" target="_blank" class="link-github">Código <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="projeto3.png" alt="Capa do Portfólio Fotográfico" class="project-image">
+                        <h3>Portfólio Fotográfico</h3>
+                        <p>Site minimalista com galeria Modal (Lightbox) em JavaScript. Design elegante e otimização de imagens para velocidade.</p>
+                        <div class="project-links">
+                            <a href="https://pauloprogra.github.io/Landing-Page-Fotografo/" target="_blank" class="link-live">Ver Site <i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/Pauloprogra/Landing-Page-Fotografo" target="_blank" class="link-github">Código <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="projeto4.png" alt="Capa do Portfólio Fotográfico" class="project-image">
+                        <h3>Replica Super Mario</h3>
+                        <p>Uma replica do famoso jogo do Super Mario utilizando HMTL,CSS E JAVASCRIPT.</p>
+                        <div class="project-links">
+                            <a href="https://pauloprogra.github.io/Re/" target="_blank" class="link-live">Ver Site <i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/Pauloprogra/Re" target="_blank" class="link-github">Código <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="projeto5.png" alt="Capa do Portfólio Fotográfico" class="project-image">
+                        <h3>Jogo Orinal 2d de tiro</h3>
+                        <p>Jogo 2D desenvolvido por mim, utilizando bastante JavaScript.</p>
+                        <div class="project-links">
+                            <a href="https://pauloprogra.github.io/Game-Original/" target="_blank" class="link-live">Ver Site <i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/Pauloprogra/Game-Original" target="_blank" class="link-github">Código <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contato">
+            <div class="container">
+                <h2 class="section-title">Vamos Construir Algo Juntos?</h2>
+                <div class="contact-content">
+                    
+                    <form class="contact-form" id="whatsapp-form">
+                        <input type="text" id="inputName" placeholder="Seu Nome" required>
+                        <input type="email" id="inputEmail" placeholder="Seu E-mail" required>
+                        <textarea id="inputMessage" placeholder="Sua Mensagem ou Proposta"></textarea>
+                        <button type="submit" class="btn-primary">Enviar Mensagem (WhatsApp)</button>
+                    </form>
+
+                    <div class="contact-links">
+                        <h3>Onde me encontrar:</h3>
+                        <a href="https://linkedin.com/in/seu-perfil" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="https://github.com/Pauloprogra" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="mailto:seu-email@dominio.com" class="social-link">
+                            <i class="fas fa-envelope"></i> ps2613395@gmail.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Paulo Dos Santos. Desenvolvido com <span class="heart">&hearts;</span> e código limpo.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
